@@ -1,158 +1,188 @@
 .card {
-    // Define perspective on parent element
-    perspective: 150rem;
-    -moz-perspective: 150rem;
+  // Define perspective on parent element
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 58rem;
+
+  position: relative;
+
+  &__side {
     height: 58rem;
+    transition: all 0.8s ease;
 
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
-    &__side {
-        height: 58rem;
-        transition: all .8s ease;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        backface-visibility: hidden;
-        border-radius: .5rem;
-        overflow: hidden;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-
-        &--front {
-            background-color: $color-white;
-        }
-
-        &--back {
-            transform: rotateY(180deg);
-
-            &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-            }
-
-            &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            }
-
-            &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-            }
-        }
+    &--front {
+      background-color: $color-white;
     }
 
-    &:hover &__side--front {
-        transform: rotateY(-180deg);
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0deg);
+  }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: hard-light;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
+        url(../img/digital.jpg);
     }
 
-    &:hover &__side--back {
-        transform: rotateY(0deg);
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../img/one-screen.jpg);
     }
 
-    // Front side styling
-    &__picture {
-        background-size: cover;
-        height: 23rem;
-        background-blend-mode: hard-light;
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../img/grad.jpg);
+    }
+  }
 
+  &__heading {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 70%;
+  }
 
-        &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/digital.jpg);
-        }
+  &__heading-span {
+    padding: 1rem 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 
-        &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/one-screen.jpg);
-        }
-
-        &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/grad.jpg);
-        }
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.8),
+        rgba($color-secondary-dark, 0.8)
+      );
     }
 
-    &__heading {
-        font-size: 3rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        text-align: right;
-        color: $color-white;
-        position: absolute;
-        top: 12rem;
-        right: 2rem;
-        width: 70%;
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      );
     }
 
-    &__heading-span {
-        padding: 1rem 1rem;
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
-
-        &--1 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-secondary-light, .8),
-            rgba($color-secondary-dark, .8));
-        }
-
-        &--2 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-primary-light, .8),
-            rgba($color-primary-dark, .8));
-        }
-
-        &--3 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-tertiary-light, .8),
-            rgba($color-tertiary-dark, .8));
-        }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.8),
+        rgba($color-tertiary-dark, 0.8)
+      );
     }
+  }
 
-    &__details {
-        padding: 3rem;
+  &__details {
+    padding: 3rem;
 
-        ul {
-            list-style: none;
-            width: 80%;
-            margin: 0 auto;
-            
-            li {
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
 
-                &:not(:last-child){
-                    border-bottom: 1px solid $color-grey-light;
-                }
-            }
-            
-            
-
-        }
-    }
-
-
-    // BACK SIDE STYLING
-    &__stack {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    &__back-box {
+      li {
         text-align: center;
-        color: $color-white;
-        margin-bottom: 8rem;
-    }
+        font-size: 1.5rem;
+        padding: 1rem;
 
-    &__small-title {
-        font-size: 2rem;
-        text-transform: uppercase;
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light;
+        }
+      }
     }
+  }
 
-    &__main-txt {
-        font-size: 6rem;
-        font-weight: 200;
-        
+  // BACK SIDE STYLING
+  &__stack {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__back-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__small-title {
+    font-size: 5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__main {
+
+    &-txt {
+      font-size: 2rem;
+      font-weight: 800;
     }
-
+  }
 }

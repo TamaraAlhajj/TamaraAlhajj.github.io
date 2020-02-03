@@ -187,13 +187,13 @@ body {
   position: relative; }
   .card__side {
     height: 58rem;
-    transition: all .8s ease;
+    transition: all 0.8s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
@@ -264,11 +264,12 @@ body {
     color: #fff;
     margin-bottom: 8rem; }
   .card__small-title {
-    font-size: 2rem;
+    font-size: 5rem;
+    font-weight: 300;
     text-transform: uppercase; }
   .card__main-txt {
-    font-size: 6rem;
-    font-weight: 200; }
+    font-size: 2rem;
+    font-weight: 800; }
 
 .header {
   height: 95vh;
