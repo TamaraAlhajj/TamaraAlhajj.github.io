@@ -18,5 +18,6 @@
   "homepage": "https://github.com/TamaraAlhajj/personal-site#readme",
   "devDependencies": {
     "node-sass": "^4.13.1"
-  }
+  },
+  "dependencies": {}
 }
