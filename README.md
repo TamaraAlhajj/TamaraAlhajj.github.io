@@ -2,6 +2,8 @@
 
 Check out my personal site - *in construction* :wrench:
 
+I built this site with sass, html, and js.
+
 ### Note on Sass file structure: 7 - 1
 
     sass/
