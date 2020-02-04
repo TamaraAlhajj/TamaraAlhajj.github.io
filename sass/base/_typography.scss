@@ -57,7 +57,7 @@ body {
   &--white {
     width: 100%;
     text-align: center;
-    background-color: $color-white;
+    background-color: rgba($color-white, .8);
   }
   // clip background exactly where text is
   -webkit-background-clip: text;
