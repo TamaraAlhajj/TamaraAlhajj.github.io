@@ -20,6 +20,7 @@ body {
     letter-spacing: 3.5rem;
     margin-left: 2rem;
     animation: moveInLeft 1s ease-in;
+    animation-delay: 1s;
   }
 
   &--sub {
@@ -29,6 +30,7 @@ body {
     letter-spacing: 1.5rem;
     margin-left: 2rem;
     animation: moveInRight 1s ease-in;
+    animation-delay: 1s;
   }
 }
 
