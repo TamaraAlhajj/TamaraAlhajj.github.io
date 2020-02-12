@@ -10,6 +10,22 @@ html {
     // Define 1rem
     // 10px /default 16px
     font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 45%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 40%;
+    }
+    
+    @include respond(phone) {
+        font-size: 30%;
+    }
+
+    @include respond(desktop-lg) {
+        font-size: 75%;
+    }
 }
 
 body {
