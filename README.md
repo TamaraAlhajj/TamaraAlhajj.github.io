@@ -1,10 +1,8 @@
-# Hello world!
+:dancer: Check out my personal site
 
-Check out my personal site - *in construction* :wrench:
+:wrench: Built with `sass`, `html`, and `VanillaJS`.
 
-I built this site with sass, html, and js.
-
-### Note on Sass file structure: 7 - 1
+#### 7-1 Sass File Structure
 
     sass/
     |
