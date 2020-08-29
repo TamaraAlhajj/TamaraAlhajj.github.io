@@ -9,7 +9,7 @@ body {
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   /* To fix shaky animation */
   backface-visibility: hidden;
 
@@ -19,7 +19,7 @@ body {
     font-weight: 700;
     letter-spacing: 4rem;
     margin-left: 2rem;
-    margin-bottom: 3rem;
+    text-shadow: 1px 1px 1rem $color-primary-dark; 
   }
 
   &--sub {
