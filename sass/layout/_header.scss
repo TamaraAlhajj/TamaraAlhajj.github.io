@@ -1,28 +1,26 @@
 .header {
-    height: 95vh;
-    @include default-img-gradient("../img/hero.jpg");
-    background-position: center;
-    
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 90vh, 0 70vh);
-    position: relative;
+	height: 95vh;
+	background: linear-gradient(165deg, #590089, #762ea3, #b861bd, #ffd9d9);
 
-    &__logo-box {
-        position: absolute;
-        top: 3rem;
-        left: 4rem;
-    }
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 90vh, 0 70vh);
+	position: relative;
 
-    &__logo {
-        height: 8rem;
-    }
-    
-    &__text-box {
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    
-    }
+	&__logo-box {
+		position: absolute;
+		top: 3rem;
+		left: 4rem;
+	}
+
+	&__logo {
+		height: 8rem;
+	}
+
+	&__text-box {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
 }
