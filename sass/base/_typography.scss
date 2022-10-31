@@ -15,11 +15,14 @@ body {
 
   &--main {
     display: block;
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 700;
     letter-spacing: 4rem;
     margin-left: 2rem;
     text-shadow: 1px 1px 1rem $color-primary-dark; 
+    @media only screen and (min-width: 600px) {
+      font-size: 8rem;
+    }
   }
 
   &--sub {
@@ -50,10 +53,15 @@ body {
   letter-spacing: 0.2rem;
   transition: all 0.75s;
 
-  &:hover {
-    transform: scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
-    letter-spacing: 3rem;
+  &.reveal{
+    position: relative;
+    transition: 2s all ease;
+
+    &.active{
+      transform: scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+      letter-spacing: 3rem;
+    }
   }
 
   &--color {
