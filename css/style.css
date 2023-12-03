@@ -77,7 +77,7 @@ body {
   .heading-secondary--white {
     width: 100%;
     text-align: center;
-    background-color: #fff; }
+    background-color: rgba(255, 255, 255, 0.8); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -160,7 +160,7 @@ body {
       top: 2rem; }
     .composition__photo--p3 {
       left: 20%;
-      top: 15rem; }
+      top: 20rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #8569b2;
       transform: scale(1.05) translateY(-1rem);
