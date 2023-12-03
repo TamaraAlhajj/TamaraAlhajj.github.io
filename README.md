@@ -2,7 +2,7 @@
 
 :wrench: Built with `sass`, `html`, and `VanillaJS`.
 
-### Note on Sass file structure: 7 - 1
+#### 7-1 Sass File Structure
 
     sass/
     |
