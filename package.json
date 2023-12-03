@@ -8,16 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TamaraAlhajj/personal-site.git"
+    "url": "git+https://github.com/TamaraKunnanath/personal-site.git"
   },
-  "author": "Tamara Alhajj",
+  "author": "Tamara Kunnanath",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TamaraAlhajj/personal-site/issues"
+    "url": "https://github.com/TamaraKunnanath/personal-site/issues"
   },
-  "homepage": "https://github.com/TamaraAlhajj/personal-site#readme",
+  "homepage": "https://github.com/TamaraKunnanath/personal-site#readme",
   "devDependencies": {
     "node-sass": "^4.13.1"
-  },
-  "dependencies": {}
+  }
 }

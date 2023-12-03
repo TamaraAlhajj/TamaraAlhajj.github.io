@@ -1,20 +1,25 @@
 // COLORS
-$color-primary: #bf97ff;
-$color-primary-light:  #d8c0ff;
-$color-primary-dark: #8569b2;
-$color-primary-deep: #392d4c;
+$color-primary: #7936a4;
+$color-primary-light: #b689ff;
+$color-primary-dark: #590089;
+$color-primary-deep: #28124b;
 
 $color-secondary-light: #ffd99f;
 $color-secondary-dark: #f0a958;
 
-$color-tertiary-light: #f8cac5;
-$color-tertiary-dark: #e0826f;
+$color-tertiary-light: #ffd9d9;
+$color-tertiary-dark: #fa9797;
 
-$color-grey-light:#eeeeee;
-$color-grey-medium:#777;
+$color-grey-light: #eeeeee;
+$color-grey-medium: #777;
 
 $color-white: #fff;
 $color-black: #000;
+
+$zigzag: linear-gradient(135deg, #59008955 25%, transparent 25%) -40px 0/ 80px 80px,
+	linear-gradient(225deg, #590089 25%, transparent 25%) -40px 0/ 80px 80px,
+	linear-gradient(315deg, #59008955 25%, transparent 25%) 0px 0/ 80px 80px,
+	linear-gradient(45deg, #590089 25%, #762ea3 25%) 0px 0/ 80px 80px;
 
 // FONT
 $default-font-size: 1.6rem;
