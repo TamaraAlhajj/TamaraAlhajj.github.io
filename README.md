@@ -1,4 +1,8 @@
-### Sass file structure: 7 - 1
+# Hello world!
+
+Check out my personal site - *in construction* :wrench:
+
+### Note on Sass file structure: 7 - 1
 
     sass/
     |
