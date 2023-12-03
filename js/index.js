@@ -1,5 +1,6 @@
-
-window.addEventListener('load', () => {
-    const preload = document.querySelector('.loader-wrapper');
-    preload.classList.add('preload-finish');
-})
+// preloader functionality
+$(document).ready(function () {
+    $('.loader-wrapper').fadeOut(3000);
+    $('.heading-primary--main').addClass('animate--main');
+    $('.heading-primary--sub').addClass('animate--sub'); 
+});
