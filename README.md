@@ -12,7 +12,7 @@
     |   |– _mixins.scss       // Sass Mixins
     |
     |– base/
-    |   |– _animations.scss  // Reset/normalize
+    |   |– _animations.scss  // Keyframes
     |   |– _base.scss        // Reset/normalize
     |   |– _typography.scss  // Typography rules
     |   |– _utilities.scss   // Size Conventions
