@@ -1,24 +1,38 @@
-.section-about {
+.section{
+    
+    &-about {
     background-color: $color-grey-light;
-    padding: 25rem 0;
-    margin-top: -25vh;
-}
+    padding: 50rem 0;
+    margin-top: -42vh;
 
-.section-divider {
-	padding: 5rem 0;
+        @media screen and (max-width:600px) {
+            display: none;
+        }   
+    }
+
+    &-divider {
+	padding: 8rem 0;
 
 	background: $zigzag;
-
     transform: skewY(-7deg);
-	margin-top: -5rem;
+	margin-top: -32rem;
 
-    & > * {
-        transform: skewY(7deg);
+        & > * {
+            transform: skewY(7deg);
+        }
+
+        @media screen and (max-width:600px) {
+            display: none;
+        }
     }
-}
 
-.section-experience {
+    &-experience {
     background-color: $color-grey-light;
     padding: 25rem 0 15rem 0;
     margin-top: -12rem;
+
+        @media screen and (max-width:600px) {
+            display: none;
+        }
+    }
 }

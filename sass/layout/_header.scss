@@ -1,10 +1,14 @@
 .header {
-	height: 95vh;
 	background: linear-gradient(165deg, $color-primary-deep, $color-primary-dark, $color-primary);
-
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 90vh, 0 70vh);
 	position: relative;
+	height: 55vh;
+
+	@media only screen and (min-width: 600px) {
+		height: 95vh;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 90vh, 0 70vh);
+	}
+	
 
 	&__logo-box {
 		position: absolute;
