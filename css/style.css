@@ -201,11 +201,11 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #fbe8b2, #ffbd8b); }
+        background-image: linear-gradient(to right bottom, #ffe3b9, #f5b46b); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #d8c0ff, #8569b2); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #fae9e7, #faafa0); }
+        background-image: linear-gradient(to right bottom, #ffddd9, #eb9482); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -217,11 +217,11 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #fbe8b2, #ffbd8b), url(../img/digital.jpg); }
+      background-image: linear-gradient(to right bottom, #ffe3b9, #f5b46b), url(../img/digital.jpg); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #d8c0ff, #8569b2), url(../img/one-screen.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #fae9e7, #faafa0), url(../img/grad.jpg); }
+      background-image: linear-gradient(to right bottom, #ffddd9, #eb9482), url(../img/grad.jpg); }
   .card__heading {
     font-size: 3rem;
     font-weight: 300;
@@ -237,11 +237,11 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(251, 232, 178, 0.8), rgba(255, 189, 139, 0.8)); }
+      background-image: linear-gradient(to right bottom, rgba(255, 227, 185, 0.8), rgba(245, 180, 107, 0.8)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(216, 192, 255, 0.8), rgba(133, 105, 178, 0.8)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(250, 233, 231, 0.8), rgba(250, 175, 160, 0.8)); }
+      background-image: linear-gradient(to right bottom, rgba(255, 221, 217, 0.8), rgba(235, 148, 130, 0.8)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -265,7 +265,7 @@ body {
     margin-bottom: 8rem; }
   .card__small-title {
     font-size: 5rem;
-    font-weight: 300;
+    font-weight: 200;
     text-transform: uppercase; }
   .card__main-txt {
     font-size: 2rem;
