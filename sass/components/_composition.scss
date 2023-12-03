@@ -18,6 +18,7 @@
         &--p2{
             right: 20%;
             top: 5rem;
+            transform: rotate(15deg);
         }
 
         &--p3{
@@ -27,12 +28,29 @@
 
         &--p4{
             left: 10%;
-            top: 20rem;
+            top: 10rem;
+            transform: rotate(-15deg);
         }
 
         &--p5{
-            right: 10%;
+            right: 5%;
+            top: 25rem;
+            transform: rotate(30deg);
+        }
+
+        &--p6{
+            left: 0;
             top: 35rem;
+        }
+
+        &--p7{
+            right: 20%;
+            top: 45rem;
+        }
+
+        &--p8{
+            right: -10%;
+            top: 47rem;
         }
 
         &:hover {
@@ -45,6 +63,6 @@
     }
     &:hover &__photo:not(:hover){
         // shrink photos not hovered
-        transform: scale(.9);
+        transform: scale(.8);
     }
 }
