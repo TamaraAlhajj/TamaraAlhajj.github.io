@@ -1,0 +1,46 @@
+.preloadFinish {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $color-primary-deep;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.loader>img {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  border: 4px solid $color-white;
+  border-radius: 1rem;
+  overflow: hidden;
+  animation: loader 2s infinite ease;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
