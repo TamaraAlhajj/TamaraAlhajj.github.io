@@ -2,8 +2,8 @@
     position: relative;
 
     &__photo {
-        width: 55%;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        width: 45%;
+        //box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 2px;
         position: absolute;
         z-index: 10;
@@ -16,23 +16,35 @@
         }
 
         &--p2{
-            right: 0;
-            top: 2rem;
+            right: 20%;
+            top: 5rem;
         }
 
         &--p3{
-            left: 20%;
+            right: 0;
+            top: 10rem;
+        }
+
+        &--p4{
+            left: 10%;
             top: 20rem;
+        }
+
+        &--p5{
+            right: 10%;
+            top: 35rem;
         }
 
         &:hover {
             outline: 1.5rem solid $color-primary-dark;
+            // Adds a smooth zoom inward
             transform: scale(1.05) translateY(-1rem);
             box-shadow: 0 3rem 4rem rgba($color-black, .5);
             z-index: 20;
         }
     }
     &:hover &__photo:not(:hover){
+        // shrink photos not hovered
         transform: scale(.9);
     }
 }
