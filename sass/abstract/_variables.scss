@@ -1,14 +1,14 @@
 // COLORS
-$color-primary: #6036a4;
-$color-primary-light: #b689ff;
-$color-primary-dark: #590089;
-$color-primary-deep: #28124b;
+$color-primary: #0047AB;
+$color-primary-light: #3366CC;
+$color-primary-dark: #002366;
+$color-primary-deep: #000033;
 
-$color-secondary-light: #b689ff;
-$color-secondary-dark: #812ead;
+$color-secondary-light: #3366CC;
+$color-secondary-dark: #003399;
 
-$color-tertiary-light: #b689ff;
-$color-tertiary-dark: #a45cca;
+$color-tertiary-light: #3366CC;
+$color-tertiary-dark: #000080;
 
 $color-grey-light: #eeeeee;
 $color-grey-medium: #777;
@@ -17,10 +17,10 @@ $color-grey-dark: rgb(35, 35, 35);
 $color-white: #fff;
 $color-black: #000;
 
-$zigzag: linear-gradient(135deg, #59008955 25%, transparent 25%) -40px 0/ 80px 80px,
-	linear-gradient(225deg, #590089 25%, transparent 25%) -40px 0/ 80px 80px,
-	linear-gradient(315deg, #59008955 25%, transparent 25%) 0px 0/ 80px 80px,
-	linear-gradient(45deg, #590089 25%, #762ea3 25%) 0px 0/ 80px 80px;
+$zigzag: linear-gradient(135deg, #0047AB55 25%, transparent 25%) -40px 0/ 80px 80px,
+    linear-gradient(225deg, #0047AB 25%, transparent 25%) -40px 0/ 80px 80px,
+    linear-gradient(315deg, #0047AB55 25%, transparent 25%) 0px 0/ 80px 80px,
+    linear-gradient(45deg, #0047AB 25%, #3366CC 25%) 0px 0/ 80px 80px;
 
 // FONT
 $default-font-size: 1.6rem;
