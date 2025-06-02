@@ -10,12 +10,12 @@
         }   
     }
 
-    &-divider {
-	padding: 8rem 0;
 
-	background: $zigzag;
-    transform: skewY(-7deg);
-	margin-top: -32rem;
+    &-divider {
+        padding: 8rem 0;
+        background: $zigzag;
+        transform: skewY(-7deg);
+        margin-top: -20rem;
 
         & > * {
             transform: skewY(7deg);

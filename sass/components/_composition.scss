@@ -1,5 +1,7 @@
 .composition {
     position: relative;
+    // move up towards the top
+    margin-top: -4rem;
 
     &__photo {
         width: 45%;
@@ -11,7 +13,7 @@
 
         &--p1{
             left: 0;
-            top: -2rem;
+            top: 0;
         }
 
         &--p2{
@@ -21,7 +23,7 @@
         }
 
         &--p3{
-            right: 0;
+            right: 5%;
             top: 8rem;
         }
 
@@ -33,7 +35,7 @@
 
         &--p5{
             right: 5%;
-            top: 20rem;
+            top: 21rem;
             transform: rotate(30deg);
         }
 
@@ -44,12 +46,12 @@
 
         &--p7{
             right: 20%;
-            top: 32rem;
+            top: 34rem;
         }
 
         &--p8{
             right: -10%;
-            top: 34rem;
+            top: 36rem;
         }
 
         &:hover {

@@ -1,5 +1,21 @@
 .header {
-	background: linear-gradient(165deg, $color-primary-deep, $color-primary-dark, $color-primary);
+background: linear-gradient(180deg,
+  $color-primary-deep 0%,
+  $color-primary-dark 30%,
+  $color-primary 60%,
+  $color-primary-light 100%
+);
+
+	// Optional: subtle highlight overlay for magical effect
+	&::after {
+	content: '';
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	pointer-events: none;
+	background: radial-gradient(circle at 60% 30%, rgba(255,255,255,0.10) 0%, transparent 60%);
+	z-index: 1;
+	}
+
 	position: relative;
 	height: 95vh;
 
