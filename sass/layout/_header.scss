@@ -23,17 +23,6 @@ background: linear-gradient(180deg,
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 90vh, 0 70vh);
 	}
-	
-
-	&__logo-box {
-		position: absolute;
-		top: 3rem;
-		left: 4rem;
-	}
-
-	&__logo {
-		height: 8rem;
-	}
 
 	&__text-box {
 		position: absolute;

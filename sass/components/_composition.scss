@@ -55,13 +55,26 @@
         }
 
         &:hover {
-            outline: 1.5rem solid $color-primary-dark;
-            // Adds a smooth zoom inward
+            // The color glow is now handled by the color-specific classes below
             transform: scale(1.05) translateY(-1rem);
-            box-shadow: 0 3rem 4rem rgba($color-black, .5);
             z-index: 20;
         }
     }
+
+    // Pastel glow color classes
+    .glow-yellow:hover {
+        filter: drop-shadow(0 0 2rem $color-pastel-yellow);
+    }
+    .glow-blue:hover {
+        filter: drop-shadow(0 0 2rem $color-pastel-blue);
+    }
+    .glow-orange:hover {
+        filter: drop-shadow(0 0 2rem $color-pastel-orange);
+    }
+    .glow-pink:hover {
+        filter: drop-shadow(0 0 2rem $color-pastel-pink);
+    }
+
     &:hover &__photo:not(:hover){
         // shrink photos not hovered
         transform: scale(.8);

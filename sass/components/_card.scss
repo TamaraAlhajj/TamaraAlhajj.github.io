@@ -36,17 +36,17 @@
 
       &-2 {
         background-image: linear-gradient(
-          to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          to left top,
+          $color-primary-light,
+          $color-primary-dark
         );
       }
 
       &-3 {
         background-image: linear-gradient(
-          to right bottom,
-          $color-tertiary-light,
-          $color-tertiary-dark
+          to left bottom,
+          $color-primary-light,
+          $color-primary-dark
         );
       }
     }
@@ -80,8 +80,8 @@
     &--2 {
       background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-primary-light,
+          $color-primary-deep
         ),
         url(../img/city.jpg);
     }
@@ -89,8 +89,8 @@
     &--3 {
       background-image: linear-gradient(
           to right bottom,
-          $color-tertiary-light,
-          $color-tertiary-dark
+          $color-primary-light,
+          $color-primary-deep
         ),
         url(../img/earth.jpg);
     }
@@ -123,17 +123,17 @@
 
     &--2 {
       background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary-light, 0.8),
-        rgba($color-secondary-dark, 0.8)
+        to left top,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-deep, 0.8)
       );
     }
 
     &--3 {
       background-image: linear-gradient(
-        to right bottom,
-        rgba($color-tertiary-light, 0.8),
-        rgba($color-tertiary-dark, 0.8)
+        to right top,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-deep, 0.8)
       );
     }
   }
