@@ -1,27 +1,31 @@
 // COLORS
 
-$color-primary: #046c4e; // Lighter emerald green
-$color-primary-light: #13a87c; // Even lighter emerald
-$color-primary-dark: #02402c; // Darker emerald
-$color-primary-deep: #012218; // Deepest emerald
+$color-primary: #046c4e; // emerald green
+
+$color-primary-lightest: #2aa681;
+$color-primary-light: #0a7b5f;
+$color-primary-dark: #02402c;
+$color-primary-deep: #012218;
 
 $color-pastel-blue: #7faaff;
-$color-pastel-pink: #f7c6c7; 
+$color-pastel-pink: #ffbae8; 
 $color-pastel-yellow: #f9e79f; 
 $color-pastel-orange: #f5b041; 
 
-$color-grey-light: #eeeeee;
+$color-grey-light: #e5e5e5;
 $color-grey-medium: #777;
-$color-grey-dark: rgb(35, 35, 35);
+$color-grey-dark: #333;
+$color-grey-darker: #222;
+$color-grey-darkest: #111;
 
 $color-white: #fff;
 $color-black: #000;
 
 
-$zigzag: linear-gradient(135deg, #046c4e55 25%, transparent 25%) -40px 0/ 80px 80px,
-    linear-gradient(225deg, #046c4e 25%, transparent 25%) -40px 0/ 80px 80px,
-    linear-gradient(315deg, #046c4e55 25%, transparent 25%) 0px 0/ 80px 80px,
-    linear-gradient(45deg, #046c4e 25%, #13a87c 25%) 0px 0/ 80px 80px;
+$zigzag: linear-gradient(135deg, $color-primary 25%, transparent 25%) -40px 0/ 80px 80px,
+    linear-gradient(225deg, $color-primary-light 25%, transparent 25%) -40px 0/ 80px 80px,
+    linear-gradient(315deg, $color-primary 25%, transparent 25%) 0px 0/ 80px 80px,
+    linear-gradient(45deg, $color-primary-light 25%, $color-primary-lightest 25%) 0px 0/ 80px 80px;
 
 // FONT
 $default-font-size: 1.6rem;

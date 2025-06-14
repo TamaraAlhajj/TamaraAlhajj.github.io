@@ -7,7 +7,13 @@
 
         @media screen and (max-width:600px) {
             display: none;
-        }   
+        }
+
+        hr {
+            border-top: 2px solid $color-grey-light;
+            opacity: 0.2;
+            margin: 4rem 0;
+        }
     }
 
 

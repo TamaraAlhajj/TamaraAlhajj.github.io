@@ -2,7 +2,20 @@
 $(document).ready(function () {
     $('.loader-wrapper').fadeOut(1700);
     $('.heading-primary--main').addClass('animate--main');
-    $('.heading-primary--sub').addClass('animate--sub'); 
+    $('.heading-primary--sub').addClass('animate--sub');
+
+    // Animate btn hover from left to right on load using btn--simulate-hover
+    setTimeout(() => {
+        const btns = $('.btn.btn--white');
+        btns.each(function(i, btn) {
+            setTimeout(function() {
+                $(btn).addClass('btn--simulate-hover');
+                setTimeout(function() {
+                    $(btn).removeClass('btn--simulate-hover');
+                }, 700); // Duration of hover effect
+            }, i * 150); // Staggered delay
+        });
+    }, 2100); // Wait for above animations to finish first
 });
 
 // reveal main content on scroll
